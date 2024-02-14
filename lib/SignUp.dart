@@ -52,7 +52,7 @@ class _signupState extends State<signup> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'ALPHA',
+                        'FITNESS',
                         style: TextStyle(
                             color: Colors.red,
                             fontSize: 30,
@@ -63,7 +63,7 @@ class _signupState extends State<signup> {
                         width: 8,
                       ),
                       Text(
-                        'Fitness',
+                        'PRO',
                         style: TextStyle(
                             color: Colors.white70,
                             fontSize: 30,
