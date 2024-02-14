@@ -60,7 +60,7 @@ class _workoutbeginnerState extends State<workoutbeginner> {
                   children: [
                     Container(
                       width: getwidth(context) * 0.4,
-                      height: getheight(context) * 0.025,
+                      height: getheight(context) * 0.04,
                       margin: EdgeInsets.only(left: getwidth(context) * 0.06),
                       child: Text(
                         'BEGINNER',
