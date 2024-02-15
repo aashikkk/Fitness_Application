@@ -1,3 +1,5 @@
+import 'package:fitnessapp/ArticleAlmonds.dart';
+import 'package:fitnessapp/Article_Eggs.dart';
 import 'package:fitnessapp/FirstScreen.dart';
 import 'package:fitnessapp/LoginPage.dart';
 import 'package:fitnessapp/UserRecordManager.dart';
@@ -531,105 +533,123 @@ class _homescreenState extends State<homescreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
-                              width: getwidth(context) * 0.9,
-                              height: getheight(context) * 0.13,
-                              decoration: BoxDecoration(
-                                color: Colors.white10,
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Container(
-                                width: getwidth(context) * 0.8,
-                                height: getheight(context) * 0.1,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Container(
-                                          child: Text(
-                                            'Top Vegetables That Are High In protein',
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          width: getwidth(context) * 0.6,
-                                        ),
-                                        Container(
-                                          width: getwidth(context) * 0.23,
-                                          height: getheight(context) * 0.08,
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
-                                              image: DecorationImage(
-                                                  image: AssetImage(
-                                                      "assets/images/vegg.jpg"),
-                                                  fit: BoxFit.cover)),
-                                        ),
-                                      ],
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                    ),
-                                  ],
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          articleeggs()));
+                            },
+                            child: Container(
+                                width: getwidth(context) * 0.9,
+                                height: getheight(context) * 0.13,
+                                decoration: BoxDecoration(
+                                  color: Colors.white10,
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
-                              ),
-                              margin: EdgeInsets.only(
-                                  left: getwidth(context) * 0.05,
-                                  right: getwidth(context) * 0.02)),
+                                child: Container(
+                                  width: getwidth(context) * 0.8,
+                                  height: getheight(context) * 0.1,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Container(
+                                            child: Text(
+                                              'What is Special about Eggs?',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            width: getwidth(context) * 0.6,
+                                          ),
+                                          Container(
+                                            width: getwidth(context) * 0.23,
+                                            height: getheight(context) * 0.08,
+                                            decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(15),
+                                                image: DecorationImage(
+                                                    image: AssetImage(
+                                                        "assets/images/eggs.jpg"),
+                                                    fit: BoxFit.cover)),
+                                          ),
+                                        ],
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                margin: EdgeInsets.only(
+                                    left: getwidth(context) * 0.05,
+                                    right: getwidth(context) * 0.02)),
+                          ),
                           SizedBox(
                             width: 10.0,
                           ),
-                          Container(
-                              width: getwidth(context) * 0.9,
-                              height: getheight(context) * 0.13,
-                              decoration: BoxDecoration(
-                                color: Colors.white10,
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Container(
-                                width: getwidth(context) * 0.8,
-                                height: getheight(context) * 0.1,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Container(
-                                          child: Text(
-                                            'Reasons Why Sugar Is Bad For You',
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          width: getwidth(context) * 0.6,
-                                        ),
-                                        Container(
-                                          width: getwidth(context) * 0.23,
-                                          height: getheight(context) * 0.08,
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
-                                              image: DecorationImage(
-                                                  image: AssetImage(
-                                                      "assets/images/nosugar.jpg"),
-                                                  fit: BoxFit.cover)),
-                                        ),
-                                      ],
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                    ),
-                                  ],
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          articlealmonds()));
+                            },
+                            child: Container(
+                                width: getwidth(context) * 0.9,
+                                height: getheight(context) * 0.13,
+                                decoration: BoxDecoration(
+                                  color: Colors.white10,
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
-                              ),
-                              margin: EdgeInsets.only(
-                                  left: getwidth(context) * 0.02,
-                                  right: getwidth(context) * 0.02)),
+                                child: Container(
+                                  width: getwidth(context) * 0.8,
+                                  height: getheight(context) * 0.1,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Container(
+                                            child: Text(
+                                              'What is Special about Almonds?',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            width: getwidth(context) * 0.6,
+                                          ),
+                                          Container(
+                                            width: getwidth(context) * 0.23,
+                                            height: getheight(context) * 0.08,
+                                            decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(15),
+                                                image: DecorationImage(
+                                                    image: AssetImage(
+                                                        "assets/images/almonds.jpg"),
+                                                    fit: BoxFit.cover)),
+                                          ),
+                                        ],
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                margin: EdgeInsets.only(
+                                    left: getwidth(context) * 0.02,
+                                    right: getwidth(context) * 0.02)),
+                          ),
                           SizedBox(
                             width: 10.0,
                           ),
