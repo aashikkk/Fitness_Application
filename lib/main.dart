@@ -1,12 +1,10 @@
 import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:fitnessapp/common/set_height_and_width.dart';
+import 'package:fitnessapp/firebase/firebase_options.dart';
+import 'package:fitnessapp/views/FirstScreen.dart';
 
-import 'StartingScreen.dart';
 import 'package:flutter/material.dart';
-import 'FirstScreen.dart';
-import 'HomeScreen.dart';
-import 'firebase_options.dart';
-import 'set_height_and_width.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
