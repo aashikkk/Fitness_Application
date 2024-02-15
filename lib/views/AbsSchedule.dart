@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:fitnessapp/ChestWorkout.dart';
-import 'package:fitnessapp/ScheduleScreen.dart';
-import 'package:fitnessapp/UserRecordManager.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
-import 'AbsWorkout.dart';
-import 'BackWorkout.dart';
-import 'ShouldeWorkout.dart';
-import 'UserRecordManager.dart';
-import 'firebase_toast.dart';
-import 'set_height_and_width.dart';
+
+import '../common/UserRecordManager.dart';
+import '../common/set_height_and_width.dart';
+import '../firebase/firebase_toast.dart';
+import '../workouts/AbsWorkout.dart';
 
 class abs_schedule extends StatefulWidget {
   const abs_schedule({Key? key}) : super(key: key);
