@@ -1,4 +1,4 @@
-import 'package:fitnessapp/common/set_height_and_width.dart';
+import 'package:fitnessapp/set_height_and_width.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -66,7 +66,7 @@ class _more_screenState extends State<more_screen> {
               ),
               InkWell(
                 onTap: () {
-                  URL = 'https://www.instagram.com/alphafit.pk/';
+                  URL = 'https://www.instagram.com/';
                   _urlopen();
                 },
                 child: Container(
@@ -113,7 +113,10 @@ class _more_screenState extends State<more_screen> {
                 height: 15,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  URL = 'https://www.facebook.com/';
+                  _urlopen();
+                },
                 child: Container(
                   margin: EdgeInsets.only(
                       left: getwidth(context) * 0.03,
