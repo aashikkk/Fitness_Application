@@ -143,7 +143,7 @@ class _user_profileState extends State<user_profile> {
               ),
               Container(
                 margin: EdgeInsets.only(left: 15, right: 15),
-                height: getheight(context) * 0.35,
+                height: getheight(context) * 0.45,
                 width: getwidth(context),
                 child: ListView(
                   children: [

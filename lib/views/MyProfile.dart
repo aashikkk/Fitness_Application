@@ -30,7 +30,7 @@ class _my_profileState extends State<my_profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
-        height: 50,
+        height: 90,
         color: Colors.black,
         child: Center(
           child: TextButton(
